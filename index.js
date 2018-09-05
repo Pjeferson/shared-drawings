@@ -13,7 +13,7 @@ io = socket(server);
 io.sockets.on('connection', (socket) => {
     console.log(`new connection with ${socket.id}`);
 
-    socket.on('drawn', (data) => {
-        socket.broadcast.emit('drawn', data);
+    socket.on('draw', (data) => {
+        socket.broadcast.emit('draw', data);
     })
 });

@@ -9,17 +9,17 @@ function setup() {
   //url = 'http://192.168.0.27:3000/'; //an exemple for local network connection
   socket = io.connect(url);
 
-  socket.on('drawn', (data) => {
-    newDrawn(data.x, data.y);
+  socket.on('draw', (data) => {
+    newDraw(data.x, data.y);
   });
 }
 
 function mouseDragged(){
-  newDrawn(mouseX,mouseY);
-  socket.emit('drawn', {x: mouseX, y: mouseY});
+  newDraw(mouseX,mouseY);
+  socket.emit('draw', {x: mouseX, y: mouseY});
 }
 
-function newDrawn(x,y){
+function newDraw(x,y){
   noStroke();
   fill(255);
   ellipse(x, y, 20,20);
