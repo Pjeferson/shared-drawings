@@ -1,5 +1,5 @@
 {
-  "name": "p5js-and-socketio",
+  "name": "shared-drawings",
   "version": "1.0.0",
   "description": "using socket.io connections for sharing p5.js's drawings",
   "main": "index.js",
