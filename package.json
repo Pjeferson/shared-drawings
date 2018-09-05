@@ -1,7 +1,7 @@
 {
   "name": "p5js-and-socketio",
   "version": "1.0.0",
-  "description": "",
+  "description": "using socket.io connections for sharing p5.js's drawns",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
